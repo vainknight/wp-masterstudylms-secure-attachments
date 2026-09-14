@@ -38,7 +38,7 @@ MasterStudy outputs the lesson material download link into the lesson page HTML.
 - A filter on `the_content` (handles the most common case).
 - An output buffer (`ob_start`) active **only on URLs containing "course", "curso", or "mi-cuenta"** — avoiding any impact on the rest of the site — which scans the page HTML for links to protected files and replaces them with secure URLs.
 
-**If the download button in a lesson stops working or continues showing the unprotected URL**, MasterStudy is likely generating that URL via an AJAX/API request rather than full page HTML. In that case, let me know so we can update the detection pattern (likely intercepting the specific REST/AJAX endpoint used by the curriculum editor).
+**If the download button in a lesson stops working or continues showing the unprotected URL**, MasterStudy is likely generating that URL via an AJAX/API request rather than full page HTML.
 
 ## Protected Extensions
 
